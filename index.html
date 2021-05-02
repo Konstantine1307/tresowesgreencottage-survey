@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Tresowes Green Cottage Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+<header class="header">
+  <h1 id="title" class="text-center">Tresowes Green Cottage survey form</h1>
+  <p id="description" class="text-center">Thank you for taking the time to help us improve your preferred vacation rental</p>
+</header>
+
+
+
+<form id="survey-form">
+  
+  <div class="form-input">
+    <label for="name" id="name-label">Name</label>
+    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+  </div>
+  
+  <div class="form-input">
+    <label for="email" id="email-label">Email</label>
+     <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+  </div>  
+  
+   <div class="form-input">
+     <label for="age" id="number-label">Age (optional)</label>
+     <input type="number" name="age" id="number" min="18" max="99" class="form-control" placeholder="Age">
+    </div>
+      
+    <div class="form-input">
+     <label for="vacation-rental-name" id="dropdown">
+       <p>Which vacation rental did you choose?</p>
+     <select name="vacation-rental-name" id="dropdown-choices" class="form-control" placeholder="Age">
+       <option value="">--Please choose an option--</option>
+       <option value="The Cottage">The Cottage</option>
+       <option value="The Barn">The Barn</option>
+       <option value="The Goat Shed">The Goat Shed</option>
+    </select>
+    </label>
+  </div>
+  
+   <div class="form-input">
+     <label for="guest-recommendation" id="recommendation-options">
+       <p>Would you recomend us to your friends and family?</p>
+     <input type="radio" name="guest-recommendation" id="definitely"  class="radio-input" value="definitely" checked>
+     Definitely
+     </label>
+     <label>
+    <input type="radio" name="guest-recommendation" id="maybe"  class="radio-input" value="maybe">
+     Maybe
+     </label>
+      <label>
+    <input type="radio" name="guest-recommendation" id="not-sure"  class="radio-input" value="not-sure">
+     Not sure
+      </label>
+   </div>
+   <div class="form-input">
+     <p>What are your favourite features for the Vacation Rental?</p>
+     <label>
+     <input type="checkbox" name="favourite" class="checkbox-input" value="location">
+     Location
+     </label>
+     <label>
+     <input type="checkbox" name="favourite" class="checkbox-input" value="facilities">
+    Facilities
+     </label>
+     <label>
+     <input type="checkbox" name="favourite" class="checkbox-input" value="views">
+     Views
+     </label>
+     <label>
+     <input type="checkbox" name="favourite" class="checkbox-input" value="outdoor-area">
+     Outdoor Area
+     </label>
+     <label>
+     <input type="checkbox" name="favourite" class="checkbox-input" value="service">
+     Service
+     </label>
+     <label>
+     <input type="checkbox" name="favourite" class="checkbox-input" value="price">
+     Price
+     </label>
+   </div>
+   <div class="form-input">
+     <p>Any comments or suggestions?</p>
+     <textarea id="suggestions" name="suggestion" placeholder="Enter your comment or suggestions here..." style="height:200px"></textarea>
+      </div>
+    <div class="form-input">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+        </button>
+      </div>
+</form>
+</div>
+
+</body>
+</html>
